@@ -1,6 +1,6 @@
 __rsync__
 
-rsync -avzh --progress --stats --ignore-existing from/folder to/folder 
+rsync -avzh --progress --stats --ignore-existing from/folder to/folder  
 http://www.tecmint.com/rsync-local-remote-file-synchronization-commands/
 
 __apt get__
