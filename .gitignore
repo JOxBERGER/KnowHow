@@ -1,12 +1,17 @@
-*.class
+###################
+# OS files        #
+###################
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
 
-# Package Files #
-*.jar
-*.war
-*.ear
+# Folder config file
+Desktop.ini
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Mac crap
+.DS_Store
+._*
