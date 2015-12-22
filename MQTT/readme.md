@@ -46,3 +46,5 @@ nano /etc/mosquitto/mosquitto.conf
 //add at least the followinf lines:  
 listener 9001  
 protocol websockets  
+
+or see mosquitto.conf_example in this folder.
