@@ -43,3 +43,6 @@ sudo cp mosquitto.conf /etc/mosquitto
 
 // edit the mosquitto.conf  
 nano /etc/mosquitto/mosquitto.conf  
+//add at least the followinf lines:  
+listener 9001  
+protocol websockets  
