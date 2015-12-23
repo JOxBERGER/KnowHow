@@ -7,7 +7,7 @@ http://www.tecmint.com/rsync-local-remote-file-synchronization-commands/
 
 __copy via scp__  
 ```Shell
-scp -ra /path/to/local/storage user@remote.host:/path/to/copy  
+scp -r /path/to/local/folderA user@remote.host:/path/to/folderB  # copy folderA to folderB recursively
 scp user@homeip:/path/to/file /local/path/  
 ```
 
