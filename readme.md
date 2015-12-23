@@ -1,7 +1,7 @@
 __rsync__  
 ```Shell
-rsync -avh --progress --stats --ignore-existing from/folder to/folder   // local copy without compression
-rsync -avzhe --progress --stats --ignore-existing ssh from/folder root@192.168.0.100:/to/folder
+rsync -avh --progress --stats --ignore-existing from/folder to/folder   # local copy without compression
+rsync -avzhe --progress --stats --ignore-existing ssh from/folder root@192.168.0.100:/to/folder # copy to remote with compression
 ```
 http://www.tecmint.com/rsync-local-remote-file-synchronization-commands/  
 
