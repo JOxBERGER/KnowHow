@@ -9,12 +9,12 @@ $ scp user@homeip:/path/to/file /local/path/
 
 __apt get__  
 ```Shell
-apt-get update // update source list  
-apt-get upgrade // upgrade all installed packages  
-apt-cache search <search_term> // find a package by name
-apt-get build-dep <package_name> // Causes apt-get to install/remove packages in an attempt to satisfy the build dependencies for a source package.  
-apt-get install <package_name> // install a new package  
-apt-get remove <package_name> // remove a package
+apt-get update # update source list  
+apt-get upgrade # upgrade all installed packages  
+apt-cache search <search_term> # find a package by name
+apt-get build-dep <package_name> # Causes apt-get to install/remove packages in an attempt to satisfy the build dependencies for a source package.  
+apt-get install <package_name> # install a new package  
+apt-get remove <package_name> # remove a package
 ```
 
 __find__  
