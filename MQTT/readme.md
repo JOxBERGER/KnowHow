@@ -85,3 +85,5 @@ Replace with the ip of your pi
 mosquitto_pub -h 192.168.178.1 -p 1883 -t test/message/01 -m "Läuft"  
 mosquitto_sub -h 192.168.178.1 -p 1883 -t test/+/01  
 ```
+
+To test the Websockets try: https://github.com/JOxBERGER/IoT-Intro/tree/master/web/MQTT_minimal
