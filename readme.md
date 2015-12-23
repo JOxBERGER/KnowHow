@@ -8,7 +8,7 @@ __copy via scp__
 $ scp user@homeip:/path/to/file /local/path/  
 
 __apt get__  
-'''bash
+'''Shell
 apt-get update // update source list  
 apt-get upgrade // upgrade all installed packages  
 apt-cache search <search_term> // find a package by name
