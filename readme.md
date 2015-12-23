@@ -8,11 +8,12 @@ __copy via scp__
 $ scp user@homeip:/path/to/file /local/path/  
 
 __apt get__  
-$ apt-get update // update source list  
-$ apt-get upgrade // upgrade all installed packages  
-$ apt-cache search <search_term> // find a package by name
-$ apt-get install <package_name> // install a new package  
-$ apt-get remove <package_name> // remove a package  
+apt-get update // update source list  
+apt-get upgrade // upgrade all installed packages  
+apt-cache search <search_term> // find a package by name
+apt-get build-dep <package_name> // Causes apt-get to install/remove packages in an attempt to satisfy the build dependencies for a source package.  
+apt-get install <package_name> // install a new package  
+apt-get remove <package_name> // remove a package  
 
 
 __find__  
@@ -22,3 +23,11 @@ find /startpoint -type f -name "*something*"
 __find & delete & unmount__  
 find . -type f -name ".*" -exec rm -rf {\} \;  
 diskutil unmountDisk /dev/disk1  
+
+__querry version of linux__  
+cat /etc/os-release  
+uname -a
+
+__start stop services linux__
+/etc/init.d/ <service> start
+/etc/init.d/ <service> stop

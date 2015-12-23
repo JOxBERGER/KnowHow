@@ -11,6 +11,8 @@ sudo apt-get install libc-ares-dev
 sudo apt-get install uuid-dev  
 sudo apt-get install daemon  
 
+// install latest stable libwebsockets
+wget http://git.libwebsockets.org/cgi-bin/cgit/libwebsockets/snapshot/libwebsockets-1.4-chrome43-firefox-36.tar.gz
 tar zxvf libwebsockets*  
 cd libwebsockets*  
 
@@ -38,8 +40,8 @@ WITH_WEBSOCKETS:=yes
 make  
 sudo make install  
 
-// copy the mosquitto bin to /usr/sbin/mosquitto so we can use our autostart script  
-cp /usr/local/sbin/mosquitto /usr/sbin/mosquitto  
+// move the mosquitto bin to /usr/sbin/mosquitto so we can use our autostart script  
+mv /usr/local/sbin/mosquitto /usr/sbin/mosquitto  
 
 sudo mkdir /etc/mosquitto  
 sudo cp mosquitto.conf /etc/mosquitto  
