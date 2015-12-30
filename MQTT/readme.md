@@ -2,6 +2,9 @@ __mosquitto + websockets @ rpi__
 Mostly based on: http://blog.thingstud.io/recipes/how-to-make-your-raspberry-pi-the-ultimate-iot-hub/  
 
 __Type into your shell__
+
+ssh into your PI.
+
 ```Shell
 sudo apt-get update  
 sudo apt-get install libssl-dev # instead of sudo apt-get install openssl-dev  
@@ -85,7 +88,7 @@ sudo update-rc.d mosquitto defaults
 ```
 
 __test it__  
-Replace with the ip of your pi
+Replace with the IP of your pi
 ```Shell
 mosquitto_pub -h 192.168.178.1 -p 1883 -t test/message/01 -m "Läuft"  
 mosquitto_sub -h 192.168.178.1 -p 1883 -t test/+/01  
