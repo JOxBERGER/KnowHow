@@ -1,5 +1,6 @@
 __mosquitto + websockets @ rpi__  
 Mostly based on: http://blog.thingstud.io/recipes/how-to-make-your-raspberry-pi-the-ultimate-iot-hub/  
+For plain Ubuntu with __Upstart__ startup might be handeld different see: http://qiita.com/aquaviter/items/cb3051cf42a3a3c4a4d9 & https://wiki.ubuntuusers.de/Upstart  
 
 __Type into your shell__
 
@@ -15,6 +16,7 @@ sudo apt-get install libssl-dev # instead of sudo apt-get install openssl-dev
 
 # install cmake if neccessary  
 sudo apt-get build-dep cmake
+sudo apt-get install cmake
 
 # install the following tools    
 sudo apt-get install libc-ares-dev  

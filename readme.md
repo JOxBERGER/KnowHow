@@ -1,3 +1,9 @@
+__list all user in linux__
+```Shell
+cut -d: -f1 /etc/passwd
+```
+
+
 __rsync__  
 ```Shell
 rsync -avh --progress --stats --ignore-existing from/folder to/folder   # local copy without compression
