@@ -34,7 +34,7 @@ sudo make install
 sudo ldconfig  
 
 # leave folder
-cd ..
+cd ../..
 
 # mosquitto-1.4.5. is tested. Check for newer versions.
 wget http://mosquitto.org/files/source/mosquitto-1.4.5.tar.gz
