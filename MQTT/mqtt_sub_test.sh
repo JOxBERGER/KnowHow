@@ -1,6 +1,6 @@
 #!/bin/bash
 
-server=XX.XX.XX.XX
-port=1883
+server=$1
+port=$2
 
-mosquitto_sub -h $server -p $port -t test/message/# -q 2
+mosquitto_sub -h $server -p $port -t /test/message -q 2
