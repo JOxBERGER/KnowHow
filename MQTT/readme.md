@@ -58,7 +58,9 @@ sudo mkdir /etc/mosquitto
 sudo cp mosquitto.conf /etc/mosquitto  
 
 # edit the mosquitto.conf  
-nano /etc/mosquitto/mosquitto.conf  
+nano /etc/mosquitto/mosquitto.conf
+```
+
 # add at least the followinf lines:  
 listener 9001  
 protocol websockets  
@@ -75,8 +77,9 @@ sudo adduser mosquitto
 sudo chmod +x /etc/init.d/mosquitto  
 
 # set it to run at system start
+```Shell
 sudo update-rc.d mosquitto defaults
-# may be try this: sudo update-rc.d /etc/init.d/mosquitto defaults
+# maybe try this: sudo update-rc.d /etc/init.d/mosquitto defaults
 ```
 
 __test it__  
