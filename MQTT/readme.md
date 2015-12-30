@@ -3,14 +3,20 @@ Mostly based on: http://blog.thingstud.io/recipes/how-to-make-your-raspberry-pi-
 
 __Type into your shell__
 
-ssh into your PI.
+SSH into your PI.
 
 ```Shell
+# Generate a new folder and enter the folder
+mkdir tmp
+cd tmp
+
 sudo apt-get update  
 sudo apt-get install libssl-dev # instead of sudo apt-get install openssl-dev  
 
 # install cmake if neccessary  
-sudo apt-get build-dep cmake  
+sudo apt-get build-dep cmake
+
+# install the following tools    
 sudo apt-get install libc-ares-dev  
 sudo apt-get install uuid-dev  
 sudo apt-get install daemon  
@@ -27,8 +33,8 @@ cmake ..
 sudo make install  
 sudo ldconfig  
 
-# Change directory to home  
-cd ~  
+# leave folder
+cd ..
 
 # mosquitto-1.4.5. is tested. Check for newer versions.
 wget http://mosquitto.org/files/source/mosquitto-1.4.5.tar.gz
