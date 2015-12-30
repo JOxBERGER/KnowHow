@@ -12,6 +12,12 @@ persistence_location /var/mosquitto/
 connection_messages true
 log_timestamp true
 
+# Setup the Certificate see: https://mosquitto.org/tag/tls/ for details
+# listener 8883
+# cafile /etc/letsencrypt/live/ocoire.net/chain-ca.pem
+# certfile /etc/letsencrypt/live/ocoire.net/cert.pem
+# keyfile /etc/letsencrypt/live/ocoire.net/privkey.pem
+
 # mqtt port
 listener 1883
 
