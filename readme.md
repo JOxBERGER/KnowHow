@@ -69,7 +69,7 @@ usermod -a -G {group} {user}
 ### make Folder writable to group
 ```Shell
 chown -R {group} /some/folder/*
-
+```
 
 
 ## GitBasics

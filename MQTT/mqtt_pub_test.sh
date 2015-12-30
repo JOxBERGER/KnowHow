@@ -1,6 +1,6 @@
 #!/bin/bash
 
-server=87.10.37.1
+server=XX.XX.XX.XX
 port=1883
 
 c=0
