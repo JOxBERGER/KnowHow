@@ -1,23 +1,19 @@
-__list all user in linux__
-```Shell
-cut -d: -f1 /etc/passwd
-```
+## Linux Admin
 
-
-__rsync__  
+### rsync
 ```Shell
 rsync -avh --progress --stats --ignore-existing from/folder to/folder   # local copy without compression
 rsync -avzhe --progress --stats --ignore-existing ssh from/folder root@192.168.0.100:/to/folder # copy to remote with compression
 ```
 http://www.tecmint.com/rsync-local-remote-file-synchronization-commands/  
 
-__copy via scp__  
+### copy via scp  
 ```Shell
 scp -rv /path/to/local/folderA user@remote.host:/path/to/folderB  # copy folderA to folderB recursively
 scp -v user@homeip:/path/to/file /local/path/file # copy just file  
 ```
 
-__apt get__  
+### apt get
 ```Shell
 apt-get update # update source list  
 apt-get upgrade # upgrade all installed packages  
@@ -27,32 +23,42 @@ apt-get install <package_name> # install a new package
 apt-get remove <package_name> # remove a package
 ```
 
-__find__  
+### find
 ```Shell
 find . -name ".\*" -exec rm -rf {\} \; # find files & folders mathing the pattern and delete them. Example will delete Mac sys files.  
 find /startpoint -type f -name "\*something\*"  # find files and print the results.
 ```
 
-__find & delete & unmount__  
+### find & delete & unmount
 Helpful to clean a Disk from Mac Sys files before ejecting it. Finds Files & Folders  
 ```Shell
 find .  -name ".\*" -exec rm -rf {\} \;  
 diskutil unmountDisk /dev/disk1  
 ```
-__querry version of linux__  
+### querry version of linux  
 ```Shell
 cat /etc/os-release  
 uname -a
 ```
 
-__start stop services linux__
+### start stop services linux
 ```Shell
 /etc/init.d/ <service> start
 /etc/init.d/ <service> stop
 ```
 
-GitBasics
-=========
+__list all user in linux__
+```Shell
+cut -d: -f1 /etc/passwd
+```
+
+__list groups a user is part of__
+```Shell
+groups root
+```
+
+
+## GitBasics
 
 ### Comiting
 Add and commit all changes with one command
