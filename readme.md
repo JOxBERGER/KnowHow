@@ -47,15 +47,29 @@ uname -a
 /etc/init.d/ <service> stop
 ```
 
-__list all user in linux__
+### list all user in linux
 ```Shell
 cut -d: -f1 /etc/passwd
 ```
 
-__list groups a user is part of__
+### list groups a user is part of
 ```Shell
 groups root
 ```
+
+### add group  
+```Shell
+groupadd {developers}
+```
+
+### add existing user to group existing group
+```Shell
+usermod -a -G {group} {user}
+```
+### make Folder writable to group
+```Shell
+chown -R {group} /some/folder/*
+
 
 
 ## GitBasics
