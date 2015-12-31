@@ -1,4 +1,4 @@
-## Linux Admin
+## Linux Shell
 
 ### rsync
 ```Shell
@@ -35,6 +35,7 @@ Helpful to clean a Disk from Mac Sys files before ejecting it. Finds Files & Fol
 find .  -name ".\*" -exec rm -rf {\} \;  
 diskutil unmountDisk /dev/disk1  
 ```
+
 ### querry version of linux  
 ```Shell
 cat /etc/os-release  
@@ -66,11 +67,19 @@ groupadd {developers}
 ```Shell
 usermod -a -G {group} {user}
 ```
+
 ### make Folder writable to group
 ```Shell
 chown -R {group} /some/folder/*
 ```
 
+### Get the absolute Path to the shell script in a shell script
+```Shell
+# cd into the Folder of the Script  
+cd `dirname $0`  
+# Store Path in variable  
+SCRIPTPATH=${PWD}  
+```
 
 ## GitBasics
 
