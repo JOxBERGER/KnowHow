@@ -15,7 +15,7 @@ sudo apt-get update
 sudo apt-get install libssl-dev # instead of sudo apt-get install openssl-dev  
 
 # install cmake if neccessary  
-sudo apt-get build-dep cmake
+(sudo apt-get build-dep cmake)
 sudo apt-get install cmake
 
 # install the following tools    
@@ -24,7 +24,7 @@ sudo apt-get install uuid-dev
 sudo apt-get install daemon  
 
 # install latest stable libwebsockets
-wget http://git.libwebsockets.org/cgi-bin/cgit/libwebsockets/snapshot/libwebsockets-1.4-chrome43-firefox-36.tar.gz
+wget https://libwebsockets.org/git/libwebsockets/snapshot/libwebsockets-1.4-chrome43-firefox-36.tar.gz
 tar zxvf libwebsockets*  
 cd libwebsockets*  
 
